@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="description" content="Formularios de contato do trabalho 1">
+        <title>Trabalho1</title>
+    </head>
+
+    <body>
+        <header>
+           <h1>Formulário de Contato</h1>
+        </header>
+
+        <nav>
+            <h2 id="menu">Menu</h2>
+            <ul>
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="index.html">Contato</a></li>
+                <li><a href="../galeria/index.html">Galeria</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <form action="formulario.php" method="post">
+                <section>
+                    <h2>Dados Pessoais</h2>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Informe nome completo" autocomplete="on" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>                    
+                    </div>
+
+                    <div>
+                        <label for="confemail">Confirme email:</label>
+                        <input type="email" id="confemail" name="confemail" autocomplete="off" required>                    
+                    </div>
+
+                    <div>
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" autocomplete="off" required>
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel"   id="telefone" name="telefone" autocomplete="on" required>
+                    </div>
+
+                    <div>
+                        <label for="nasc">Data de Nascimento:</label>
+                        <input type="date" id="nasc" name="data de Nascimento" autocomplete="off" >
+                    </div>
+
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <div>
+                            <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="feminino" name="sexo" value="feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="naodeclarar" name="sexo" value="naodeclarar">
+                            <label for="naodeclarar">Não declarar</label>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Estado Civil</legend>
+                        <div>
+                            <input type="radio" id="solteiro" name="estadocivil" value="solteiro" checked>
+                            <label for="solteiro">Solteiro</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="casado" name="estadocivil" value="casado">
+                            <label for="casado">Casado</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="divorciado" name="estadocivil" value="divorciado">
+                            <label for="divorciado">Divorciado</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="viúvo" name="estadocivil" value="viuvo">
+                            <label for="viúvo">Viúvo</label>
+                        </div>
+                    </fieldset>
+                </section>
+
+                <section>
+                    <h2>Dados da Empresa</h2>
+                    <div>
+                        <label for="cnpj">CNPJ:</label>
+                        <input type="text" id="cnpj" name="cnpj" autocomplete="off">
+                    </div>
+                    
+                    <div>
+                        <label for="razao-social">Razão Social</label>
+                        <input type="text" id="razao-social" name="razao-social" autocomplete="off">
+
+                    </div>
+
+                    <div>
+                        <label for="ramo">Ramo de Atuação</label>
+                        <input type="text" id="ramo" name="ramo-atuação" autocomplete="off">
+
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Endereço</h2>
+                    <div>
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" autocomplete="off" required>   
+                    </div>
+
+                    <div>
+                        <label for="tipologradouro">Tipo de logradouro</label>
+                        <select id="tipologradouro" name="tipo logradouro" required>
+                            <option value="" >logradouro</option>
+                            <option value="rua">Rua</option>
+                            <option value="avenida">Avenida</option>
+                            <option value="praça">Praça</option>
+                            <option value="rodovia">Rodovia</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" id="logradouro" name="logradouro" autocomplete="on" required>
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" autocomplete="on" required>
+                    </div>
+                    <div>
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" autocomplete="on" required>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Descrição do interesse</h2>
+                    <textarea name="descriçao" rows="10" cols="50" maxlength="350">
+Descreva aqui os detalhes da vaga 
+                    </textarea>
+                </section>
+
+                <section>
+                    <h2>Outras informações</h2>
+                    <fieldset>
+                        <legend>Pretenção salarial</legend>
+                        <div>
+                            <input type="radio" id="-1200" name="pretençaosalarial" value="-1200">
+                            <label for="-1200">Menos de R$1200</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="1200-1500" name="pretençaosalarial" value="1200-1500">
+                            <label for="1200-1500">R$1200 a R$1500</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="1501-2500" name="pretençaosalarial" value="1501-2500">
+                            <label for="1501-2500">R$1501 a R$2500</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="2501-4000" name="pretençaosalarial" value="2501-4000">
+                            <label for="2501-4000">R$2501 a R$4000</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="+4000" name="pretençaosalarial" value="+4000">
+                            <label for="+4000">Mais de R$4000</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Atividades exercidas</legend>
+                            <div>
+                                <input type="checkbox" id="gestaoPessoas" name="atividades[]" value="gestaoPessoas" >
+                                <label for="gestaoPessoas">Gestão de pessoas</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="atendCliente" name="atividades[]" value="atendCliente">
+                                <label for="atendCliente">Atendimento ao cliente</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="front-end" name="atividades[]" value="front-end">
+                                <label for="front-end">Desenvolvimento front-end</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="back-end" name="atividades[]" value="back-end">
+                                <label for="back-end">Desenvolvimento back-end</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="devops" name="atividades[]" value="devops">
+                                <label for="devops">Devops</label>
+                            </div>
+                        </fieldset>
+                </section>
+
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            03 de Dezembro de 2021  <strong title="Só para usar o strong também">Não é hoje </strong>
+        </footer>
+    </body>
+        
+</html>
