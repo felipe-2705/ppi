@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="description" content="Galeria do trabalho1">
+        <title>Trabalho1</title>
+        <style>
+
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: rem;
+                background-color: aliceblue;
+                line-height: 1.5rem;
+                margin: 0;
+            }
+            h1{
+                font-family: MV BOLI;
+                font-size: 3rem;
+                text-align: center;
+
+            }
+            header{
+                background-color: rgb(38, 0, 255);
+                color: #fff;
+                text-align: center;
+                padding: 4px;
+                width: 100%;
+                margin: 0;
+                position: sticky;
+                top: 0;
+            }
+            nav{
+                background-color: aliceblue;
+                text-align: center;
+                padding: 2px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                position: sticky;
+                top: 6rem;
+                display: block;
+            }
+            .lista-horizontal{
+                list-style-type: none;
+                margin: 0 auto;
+                width: 60%;
+            }
+            .lista-horizontal > li{
+                display: inline-block;
+                margin: 10px;
+                margin-left: 4rem;
+            }
+            li > a{
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            #quadro{
+                background-color: #eee;
+                padding: 2% 4%;
+                border: 0.5px solid gray;
+                border-radius: 10px;
+                width: 60%;
+                margin: 0 auto;
+            }
+            img{
+                width: 220px;
+                height: 150px;
+                margin: 15px;
+                border: 0px solid #555;
+                border-radius: 10px;
+                background-color: #f5f5f5;
+                display: inline-block;
+            }
+            div > h2{
+                text-align: center;
+                font-size: 2rem;
+            }
+            #iframe-div{
+                display: block;
+                padding: 4%;
+                width: 30%;
+                margin: 2% auto;
+                border: 10px solid gray;
+                border-radius: 10px;
+                border-style: double;
+                background-color: black;
+                position: relative;
+                min-width: min-content;
+            }
+            iframe{
+                position: relative;
+            }            
+            footer{
+                background-color: rgb(38, 0, 255);
+                color: #fff;
+                text-align: center;
+                padding: 2px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                position: sticky;
+                bottom: 0;
+                display: block;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Galeria</h1>
+        </header>
+
+        <nav >
+            <ul class="lista-horizontal">
+                <li><a href="../index.html">Principal</a></li>
+                <li><a href="../contato/index.html">Contato</a></li>
+                <li><a href="../galeria/index.html">Galeria</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="quadro">
+                <h2>Monstros de d&d</h2>
+                    <img src="images/Munna.jpg" title="Drider" alt="Drider" height="100" width="100">
+                    <img src="images/nothic.jpg" title="Nothic" alt="Nothic" height="100" width="100">
+                    <img src="images/orcChief.png" title="Orc" alt="Orc" height="100" width="100">
+                    <img src="images/shadowmatiff.png" title="Shadow matiff" alt="Shadow matiff" height="100" width="100">
+                    <img src="images/stone_defender.jpg" title="Stone Defender" alt="Stone Defender" height="100" width="100">
+                    <img src="images/succubus.jpg" title="Succubus" alt="Succubus" height="100" width="100">
+            </div>
+
+            <div id="iframe-div"> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jT3FRzEJDp8" title="Como jogar D&D"  allowfullscreen></iframe>
+            </div>
+        </main>
+
+        <footer>
+            03 de Dezembro de 2021  <strong title="Só para usar o strong também">Não é hoje </strong>
+        </footer>
+    </body>
+        
+</html>
