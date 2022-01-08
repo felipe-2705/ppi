@@ -1,0 +1,54 @@
+body{
+    font-style: normal;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5rem;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+main{
+    background-color: #fff;
+    padding: 2% 4%;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input{
+    display: block;
+    margin: 8px 0 15px;
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+input:hover{
+    border: 1px solid blue;
+    box-shadow: 2px solid rgb(173, 202, 230);
+}
+
+.entrada{
+    margin-bottom:5px;
+    padding: 2px 5px;
+    margin: 0 auto;
+}
+
+
+button:hover{
+    border: 1px solid blue;
+    box-shadow: 2px solid lightblue;
+}
+
+span{
+    color: red;
+    width: fit-content;
+    font-weight: bold;
+}

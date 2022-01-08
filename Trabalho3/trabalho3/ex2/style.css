@@ -1,0 +1,49 @@
+main{
+    background-color: rgb(206, 204, 204);
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2% 2%;
+    border-radius: 10px;
+}
+
+main > div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+div > label{
+    font-size: 1.5rem;
+}
+
+input{
+    display: inline;
+}
+
+li{
+    width: 50%;
+    margin: 5px auto;
+    background-color: rgb(189, 217, 240);
+    border: 1px solid rgba(70, 67, 212);
+    font-size: 1.5rem;
+    padding: 5px 10px 5px 20px; 
+    border-radius: 3px;
+}
+
+li > span{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+
+}
+
+li > button {
+    font-size: smaller;
+    float: right;
+    color: red;
+    border: none;
+    background-color: rgb(189, 217, 240);
+    cursor: pointer;
+}

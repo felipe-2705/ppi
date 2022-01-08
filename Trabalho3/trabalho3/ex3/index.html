@@ -2,96 +2,67 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta  name="description" content="Pagina desenvolvida para o segundo trabalho da disciplina de Programação para a internet, exercício 3.">
-        <title>Trabalho2</title>
-        <style>
-            body{
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                margin: 0;
-                background-image: url("images/bg1.jpg");
-                background-size: cover;
-            }
-
-            nav{
-                background-color: #000;
-                color: white;
-                text-align: center;
-                padding: 2px;
-                width: 100%;
-                margin: 0 auto;
-            }
-            .lista-horizontal{
-                list-style-type: none;
-            }
-            .lista-horizontal > li{
-                display: inline-block;
-                margin: 10px;
-                margin-left: 4rem;
-            }
-            li > a{
-                color: white;
-                text-decoration: none;
-                font-size: 1.5rem;
-            }
-
-            main{
-                background-color: rgba(211, 211, 211, 0.795);
-                padding: 2% 4%;
-                border: 0.5px solid gray;
-                border-top: none;
-
-                width: 60%;
-                margin: 0 auto;
-                position: relative;
-            }
-
-            h1{
-                color: #555;
-            }
-
-            img{
-                width: 220px;
-                height: 150px;
-                margin: 15px;
-                border: 0px solid #555;
-                border-radius: 10px;
-                background-color: #f5f5f5;
-                display: inline-block;
-            }
-           
-        </style>
+        <meta  name="description" content="Pagina desenvolvida para o Terceiro trabalho da disciplina de Programação para a internet, Exercício 1.">
+        <title>Trabalho3</title>
+        <link rel= "stylesheet" href="style.css">
     </head>
 
     <body>
+        <header>
+            <h1>Faculdade de Computação</h1>
+        </header>
+
         <nav>
-            <ul class="lista-horizontal">
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Galeria</a>
-                </li>
-                <li>
-                    <a href="">Histórico</a>
-                </li>
-                <li>
-                    <a href="">Contato</a>
-                </li>
-            </ul>
+            <section>
+                <ul>
+                    <li><button>Ciênicia da Computação</button></li>
+                    <li><button>Sistemas de Informação</button></li>
+                    <li><button>Mestrado</button></li>
+                    <li><button>Doutorado</button></li>
+                </ul>
+            </section>
         </nav>
 
         <main>
-            <h1>ABC Clínica Médica - Nossa Estrutura</h1>
-                <div>
-                    <img src="images/Clinica1.jpg" width="150px" height="150px" title="Clinica">
-                    <img src="images/Clinica2.jpg" title="Sala de espera">
-                    <img src="images/Clinica3.jpg" title="Consultório">
-                    <img src="images/Clinica4.jpg" title="Enfermeira">
-                    <img src="images/Clinica5.jpg" title="Sala de Procedimentos">
-                    <img src="images/Clinica6.jpg" title="Sala de Cirurgia">
-                    <img src="images/Clinica7.jpg" title="Quarto">
-                    <img src="images/Clinica8.jpg" title="Estetoscópio">
-                </div>
+            <article class="tabs">
+                <section>
+                    <h2>Bacharelado Ciência da Computaçao </h2>
+                    <p>
+                        O Curso de Bacharelado em Ciência da Computação é o marco inicial da Faculdade de Computação. Foi criado em 1988 e teve o seu reconhecimento em 11 de fevereiro de 1993 por meio da Portaria 181/93 do MEC. O objetivo do Curso é formar profissionais da área de Informática com competência no desenvolvimento de software, atendendo adequadamente as exigências de mercado de trabalho, além de capacitar o egresso a concluir com sucesso programas de pós-graduação.
+                    </p>
+                    <p>
+                        Os egressos do curso têm obtido grande êxito na realização profissional, destacando, um considerável número de empresas pertencentes à ex-alunos do curso; um grande número de alunos que ingressam em consolidados cursos de pós-graduação no país e exterior; atuação significativa de nossos ex-alunos em atividades de ensino e pesquisa em instituições de ensino de nível superior; e outros tantos que atuam em grandes empresas nacionais e multinacionais.
+                    </p>
+                    <p>
+                        O Curso conta com um corpo docente altamente qualificado de diversas unidades da Universidade Federal de Uberlândia, com destaque para a Faculdade de Computação.
+                    </p>                 
+                </section>
+                <section>
+                    <h2>Sistemas de Informação</h2>
+                    <p>
+                        O Curso de Bacharelado em Sistemas de Informação foi criado no ano de 2009 e teve o seu reconhecimento em 31 de Maio de 2013 por meio da Portaria 248/13 do Ministério da Educação.
+                    </p>
+                    <p>
+                        O Objetivo do Curso é preparar profissionais com sólida e ampla formação técnica na área de tecnologia da informação aplicada às organizações; Desenvolver discentes empreendedores, capazes de projetar, implementar e gerenciar a infraestrutura de tecnlogia da informação envolvendo computadores, comunicação e dados em sistemas organizacionais; Consolidar um profissional cidadão, com competências - conhecimentos, habilidades e atitudes - e com responsabilidade social, capaz de respeitar as diferenças individuais, saber produzir e usar a tecnologia em benefício da sociedade e com visão sistêmica de negócios.
+                    </p>
+                    <p>
+                        A Graduação conta com um corpo docente altamente qualificado de diversas Unidades da Universidade Federal de Uberlândia, com destaque para a Faculdade de Computação
+                    </p>
+                </section>
+                <section>
+                    <h2>Mestrado</h2>
+                    <p>
+                        O Programa de Pós-Graduação em Ciência da Computação (PPGCO) da Universidade Federal de Uberlândia (UFU) foi criado em março de 2001 em resposta à demanda regional por formação acadêmica de qualidade, tendo como objetivo a formação de pesquisadores, docentes e profissionais altamente gabaritados para aturarem em universidades, centros de pesquisa e empresas envolvidas com tecnologia de ponta.
+                    </p>
+                </section>
+                <section>
+                    <h2>Doutorado</h2>
+                    <p>
+                        O Programa de Pós-Graduação em Ciência da Computação (PPGCO) da Universidade Federal de Uberlândia (UFU) foi criado em março de 2001 em resposta à demanda regional por formação acadêmica de qualidade, tendo como objetivo a formação de pesquisadores, docentes e profissionais altamente gabaritados para aturarem em universidades, centros de pesquisa e empresas envolvidas com tecnologia de ponta.
+                    </p>
+                </section>
+            </article>
+            <script src="tabs.js"></script>
         </main>
     </body>
 </html>

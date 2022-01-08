@@ -4,32 +4,7 @@
         <meta charset="UTF-8">
         <meta  name="description" content="Pagina desenvolvida para o Terceiro trabalho da disciplina de Programação para a internet, Exercício 1.">
         
-        <style>
-            header{
-                background-color: #555;
-                color: #ddd;
-                text-align: center;
-                padding: 2px;
-                width: 100%
-            }
-            body{
-                font-style: normal;
-                font-family: "Helvetica Neue", Arial, sans-serif;
-                line-height: 1.5rem;
-                background-image: url("../images/background.jpg");
-                background-size: cover;
-                margin: 0;
-            }
-            main{
-                background-color: #eee;
-                padding: 2% 4%;
-                border: 0.5px solid gray;
-                border-top: none;
-
-                width: 60%;
-                margin: 0 auto;
-            }
-        </style>
+        <link rel= "stylesheet" href="style.css">
     </head>
 
     <body>
@@ -62,6 +37,16 @@
                     </p>
                 </section>
             </article>
+
+            <button type="button" id="btnOpenModal">Abrir modal</button>
         </main>
+        <div id="modalteste" class="modal">
+            <div class="modalContent">
+                <h2>Olá! Seja Bem Vindo!</h2>
+                <button class="buttonClose">ok</button>
+            </div>
+        </div>
+
+        <script src="modal.js"></script>
     </body>
 </html>

@@ -2,68 +2,22 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta  name="description" content="Pagina desenvolvida para o segundo trabalho da disciplina de Programação para a internet, exercício 2.">
-        <title>Trabalho2</title>
-
-        <style>
-            body{
-                background-color: #eee;
-            }
-
-            .loginbox {
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                width: 50%;
-                padding: 20px;
-                background-color: white;
-                border: 0.8px solid #aaa;
-                border-radius: 10px;
-                position: absolute;
-                left: 50%;
-                top: 50% ;
-                transform: translate(-50%, -50%);
-                }
-
-            input{
-                display: block;
-                margin: 8px 0 15px;
-                padding: 8px;
-                width: 90%;
-                border: 0.5px solid #888;
-                border-radius: 4px;
-            }
-
-            input:focus{
-                border: 0.5px solid rgb(26, 10, 243);
-                box-shadow: 0px 0px 8px rgb(49, 171, 252);
-                outline: none;
-            }
-
-            button:hover{
-                border: 0.5px solid rgb(26, 10, 243);
-                box-shadow: 0px 0px 8px rgb(49, 171, 252);
-                cursor: pointer;
-                outline: none;
-            }
-        </style>
+        <meta  name="description" content="Pagina desenvolvida para o terceiro trabalho da disciplina de Programação para a internet, exercício 2.">
+        <link rel="stylesheet" href="style.css"> 
+        <title>Trabalho3</title>
     </head>
 
     <body>
         <main>
-            <div class="loginbox">
-                <form action="action.php" method="post">
-                    <div>
-                        <label for="usuario">Usuário:</label>
-                        <input type="text" id="usuario" name="usuario" autocomplete="on">
-                    </div>
-                    <div>
-                        <label for="senha">Senha:</label>
-                        <input type="text" id="senha" name="senha" autocomplete="off">
-                    </div>
-                    <div>
-                        <button>Entrar</button>
-                    </div>
-                </form>
+            <div>
+                <label for="interesse">Interesse:</label>
+                <input type="text" id="interesse" name="interesse">
             </div>
+    
+            <ol>
+            </ol>
+
+            <script src="list.js"></script>
         </main>
     </body>
 </html>

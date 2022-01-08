@@ -1,0 +1,74 @@
+header{
+    background-color: rgb(29, 28, 28);
+    color: #ddd;
+    text-align: center;
+    padding: 2px;
+    width: 100%
+}
+body{
+    font-style: normal;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5rem;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    margin: 0;
+}
+main{
+    background-color: #eee;
+    padding: 2% 4%;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+
+    width: 60%;
+    margin: 0 auto;
+}
+
+.tabs h2{
+    color: rgb(0, 0, 136);
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0 auto;
+    width: 60%;
+}
+ul > li{
+    display: inline-block;
+    
+}
+
+nav{
+    background-color: #fff;
+    border: 1px solid rgb(97, 96, 96);
+    box-shadow: 1px rgb(97, 96, 96);
+    margin-bottom: 5px;
+}
+
+nav button{
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    background-color: inherit;
+    height: 30px;
+    margin: 0;
+}
+
+nav button:hover{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button.buttonActive{
+    font-weight: bold;
+    color: blue;
+}
+
+.tabs section{
+    display: none;
+}
+
+section.tabActive{
+    display: block;
+}
